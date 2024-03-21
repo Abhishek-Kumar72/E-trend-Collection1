@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+    <title>SHOES</title>
+</head>
+<link rel="stylesheet" href="{% static 'ecommerce.css' %}">
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+<body>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>E-Trend Collections</h1>      
+      <p>Mission, Vission & Values</p>
+    </div>
+  </div>
+  
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+       
+      </div>
+     
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+         
+          <li><a href="{% url 'homes-ecommerce' %}">Home</a></li>
+          <li><div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">product</button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="{% url 'homes-shoes' %}">Shoes</a>
+              <a href="{% url 'homes-TShirt' %}">Men's T-shirts</a>
+              <a href="{% url 'homes-jeans' %}">Jeans</a>
+              <a href="{% url 'homes-watch' %}">Watches</a>
+              <a href="{% url 'homes-smartphone' %}">Smart Phones</a>
+              <a href="{% url 'homes-television' %}">Televisions</a>
+              <a href="{% url 'homes-hoodies' %}">Hoodies</a>
+              <a href="{% url 'homes-dinnerset' %}">Dinner Sets</a>
+              <a href="{% url 'homes-blankets' %}">Blankets</a>
+              <a href="{% url 'homes-laptop' %}">Laptops</a>
+              <a href="{% url 'homes-microwave' %}">Microwaves</a>
+              <a href="{% url 'homes-coffeemaker' %}">Coffee Makers</a>
+              <a href="{% url 'homes-bed' %}">Beds</a>
+              <a href="{% url 'homes-Airconditioner' %}">Air Conditioners</a>
+              <a href="{% url 'homes-book' %}">Books</a>
+              <a href="{% url 'homes-bag' %}">Bags</a>
+              <a href="{% url 'homes-sarees' %}">Sarees</a>
+              <a href="{% url 'homes-washingmachine' %}">Washing Machine</a>
+            </div></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Stores</a></li>
+          <li class="active"><a href="{% url 'homes-contact' %}">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{% url 'homes-login' %}"><span class="glyphicon glyphicon-user"></span> Account</a></li>
+          <li><a href="{% url 'homes-addtocart' %}"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+          
+        </ul>
+       
+      </div>
+      
+      
+    </div>
+  </nav>
+  </div>  
+
+<div class="section2">
+    <div class="container">
+      <div class="items">
+            <div class="img img1"><img src="{% static 'shoes1.jpg' %}" alt=""></div>
+            <div class="name"> WHITE SNEAKER</div>
+            <div class="price">$4</div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+        </div>
+          
+        <div class="items">
+                <div class="img img1"><img src="{% static 'shoes2.jpg' %}" alt=""></div>
+                <div class="name">RED NIKE SPORTS</div>
+                <div class="price">$7</div>
+                <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+              </div>
+
+              
+                  <div class="items">
+                    <div class="img img1"><img src="{% static 'shoes3.jpg' %}" alt=""></div>
+                    <div class="name">NIKE JORDAN</div>
+                    <div class="price">$15</div>
+                    <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+                  </div>
+
+                  
+                      <div class="items">
+                        <div class="img img1"><img src="{% static 'shoes4.webp' %}" alt=""></div>
+                        <div class="name">NIKE JORDAN(BLACK)</div>
+                        <div class="price">$17</div>
+                        <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+                      </div>
+
+                      
+                          <div class="items">
+                            <div class="img img1"><img src="{% static 'shoes5.webp' %}" alt=""></div>
+                            <div class="name">SUPER WINGS</div>
+                            <div class="price">$14</div>
+                            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+                          </div>
+
+                          
+                              <div class="items">
+                                <div class="img img1"><img src="{% static 'womens-shoes-500x500.webp' %}" alt=""></div>
+                                <div class="name">GIRLS SNEAKERS(PINK)</div>
+                                <div class="price">$5</div>
+                                <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+                              </div>
+
+
+                              <div class="items">
+                                <div class="img img1"><img src="{% static 'shoes6.jpg' %}" alt=""></div>
+                                <div class="name">NIKE HIGH SNEAKER</div>
+                                <div class="price">$7</div>
+                                <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+                              </div>
+
+                              <div class="items">
+                                <div class="img img1"><img src="{% static 'shoes7.webp' %}" alt=""></div>
+                                <div class="name">U.S POLO(SNEAKER)</div>
+                                <div class="price">$9</div>
+                                <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+                              </div>
+
+                              <div class="items">
+                                <div class="img img1"><img src="{% static 'shoes.8.webp' %}" alt=""></div>
+                                <div class="name">NIKE (PAIR)</div>
+                                <div class="price">$12</div>
+                                <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+                              </div>
+
+                              <div class="items">
+                                <div class="img img1"><img src="{% static 'shoes9.avif' %}" alt=""></div>
+                                <div class="name">DIOR NIKE JORDAN</div>
+                                <div class="price">$800</div>
+                                <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+                              </div>
+                              
+                              <div class="items">
+                                <div class="img img1"><img src="{% static 'shoes10.webp' %}" alt=""></div>
+                                <div class="name">HIGH BOOT JORDAN</div>
+                                <div class="price">$50</div>
+                                <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+                              </div>
+
+                              <div class="items">
+                                <div class="img img1"><img src="{% static 'shoes11.webp' %}" alt=""></div>
+                                <div class="name">PUMA MULTI-COLOR</div>
+                                <div class="price">$8</div>
+                                <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+                              </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="{% static 'ecommerce.js' %}"></script>
+</body>
+</html>

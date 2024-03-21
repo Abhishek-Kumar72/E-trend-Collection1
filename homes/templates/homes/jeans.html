@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+    <title>JEANS</title>
+</head>
+<link rel="stylesheet" href="{% static 'ecommerce.css' %}">
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+<body>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>E-Trend Collections</h1>      
+      <p>Mission, Vission & Values</p>
+    </div>
+  </div>
+  
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+       
+      </div>
+     
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+         
+          <li><a href="{% url 'homes-ecommerce' %}">Home</a></li>
+          <li><div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">product</button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="{% url 'homes-shoes' %}">Shoes</a>
+              <a href="{% url 'homes-TShirt' %}">Men's T-shirts</a>
+              <a href="{% url 'homes-jeans' %}">Jeans</a>
+              <a href="{% url 'homes-watch' %}">Watches</a>
+              <a href="{% url 'homes-smartphone' %}">Smart Phones</a>
+              <a href="{% url 'homes-television' %}">Televisions</a>
+              <a href="{% url 'homes-hoodies' %}">Hoodies</a>
+              <a href="{% url 'homes-dinnerset' %}">Dinner Sets</a>
+              <a href="{% url 'homes-blankets' %}">Blankets</a>
+              <a href="{% url 'homes-laptop' %}">Laptops</a>
+              <a href="{% url 'homes-microwave' %}">Microwaves</a>
+              <a href="{% url 'homes-coffeemaker' %}">Coffee Makers</a>
+              <a href="{% url 'homes-bed' %}">Beds</a>
+              <a href="{% url 'homes-Airconditioner' %}">Air Conditioners</a>
+              <a href="{% url 'homes-book' %}">Books</a>
+              <a href="{% url 'homes-bag' %}">Bags</a>
+              <a href="{% url 'homes-sarees' %}">Sarees</a>
+              <a href="{% url 'homes-washingmachine' %}">Washing Machine</a>
+            </div></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Stores</a></li>
+          <li class="active"><a href="{% url 'homes-contact' %}">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{% url 'homes-login' %}"><span class="glyphicon glyphicon-user"></span> Account</a></li>
+          <li><a href="{% url 'homes-addtocart' %}"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+          
+        </ul>
+       
+      </div>
+      
+      
+    </div>
+  </nav>
+  </div> 
+
+       
+<div class="section2">
+    <div class="container">
+      <div class="items">
+            <div class="img img1"><img src="https://img3.exportersindia.com/product_images/bc-full/2020/7/7516909/mens-slim-fit-jeans-1596099517-5538051.jpeg" alt=""></div>
+            <div class="name">SLIM FIT LIGHT BLUE</div>
+            <div class="price">$4</div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+        </div>
+
+        <div class="items">
+            <div class="img img1"><img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7633389/2019/3/20/4a2d2c74-afff-4a85-ab4f-666b797fa9d41553074656659-ether-Men-Blue-Skinny-Fit-Mid-Rise-Clean-Look-Stretchable-Je-1.jpg" alt=""></div>
+            <div class="name">BLUE JEANS</div>
+            <div class="price">$7</div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://5.imimg.com/data5/HX/AT/WY/SELLER-15079341/men-slim-fit-jean-500x500.jpg" alt=""></div>
+            <div class="name">OFF BLACK</div>
+            <div class="price">$7</div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://martinvalen.com/14710-large_default/men-s-slim-fit-skinny-leg-jeans-in-blue.jpg" alt=""></div>
+            <div class="name">BLUE JEANS</div>
+            <div class="price">$8</div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2586947/2018/3/7/11520407706830-HERENOW-Men-Jeans-2491520407706724-1.jpg" alt=""></div>
+            <div class="name">DARK BLACK</div>
+            <div class="price">$9</div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://my-test-11.slatic.net/p/2d4057975094a26dd73761d6ac4be0a3.jpg" alt=""></div>
+            <div class="name">LIGHT BLUE</div>
+            <div class="price">$4</div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://tommy-europe.scene7.com/is/image/TommyEurope/MW0MW31098_1B4_main_listing?$plp_max_225$" alt=""></div>
+            <div class="name">TOMMY HILFIER(SLIM)</div>
+            <div class="price">$10</div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/Search/224x336/444507.jpg" alt=""></div>
+            <div class="name">BLACK</div>
+            <div class="price">$7</div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://media.neimanmarcus.com/f_auto,q_auto:low,ar_4:5,c_fill,dpr_1.0,w_380/01/nm_4467394_100106_m" alt=""></div>
+            <div class="name">LIGHT MIX-BLUE</div>
+            <div class="price">$6.5</div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://gentwith.com/wp-content/uploads/2021/09/GentWith-Edmond-Black-Slim-Fit-Jeans-2.jpg" alt=""></div>
+            <div class="name">BLACK SLIM</div>
+            <div class="price">$8   </div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCEoZbsnkR1ZHqWTHkmbWLNQkdncfbGMe29Q&usqp=CAU" alt=""></div>
+            <div class="name">BLUE WATERY</div>
+            <div class="price">$7</div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+          </div>
+
+          <div class="items">
+            <div class="img img1"><img src="https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000010684955-Blue-1000010684955_01-1200.jpg" alt=""></div>
+            <div class="name">WHITE BLUE</div>
+            <div class="price">$12</div>
+            <div class="info"><a href="{% url 'homes-payment' %}">BUY NOW</a></div>
+          </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="{% static 'ecommerce.js' %}"></script>   
+
+</body>
+</html>
